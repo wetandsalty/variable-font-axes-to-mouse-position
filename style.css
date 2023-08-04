@@ -1,4 +1,9 @@
-/* for Lunia with <3 */
+/* ----------------------------------------------------
+ For Lunia with <3
+
+ Code is public domain (CC0 1.0),
+ https://creativecommons.org/publicdomain/zero/1.0/
+----------------------------------------------------- */
 
 *, *:before, *:after {
   box-sizing: border-box;
@@ -7,7 +12,7 @@
 :root{
   /* Name of variable font goes here */
   --variable-font: "Recursive", sans-serif;
-
+  
   --secondary-font: "Helvetica", sans-serif;
   --main-font-color: #FFF;
   --secondary-font-color: #1C4A2d;
@@ -33,7 +38,7 @@ body{
   color: var(--secondary-font-color);
 }
 
-/* area for mouse position tracking*/
+/* area for mouse position tracking */
 #area{
   position: absolute;
   width: 100vw;
@@ -58,7 +63,7 @@ p{
   z-index: 10;
 }
 
-/* Style of text in the variable font*/
+/* Style of text in the variable font */
 #text{
   display: block;
   width: 75vw;

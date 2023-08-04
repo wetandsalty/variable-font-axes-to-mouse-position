@@ -1,4 +1,9 @@
-/* for Lunia with <3 */
+/* ----------------------------------------------------
+ For Lunia with <3
+
+ Code is public domain (CC0 1.0),
+ https://creativecommons.org/publicdomain/zero/1.0/
+----------------------------------------------------- */
 
 $(window).load(function () {
 
