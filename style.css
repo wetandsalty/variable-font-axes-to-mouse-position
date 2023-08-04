@@ -61,21 +61,11 @@ p{
 /* Style of text in the variable font*/
 p#text{
   font-family: var(--variable-font);
-  font-variation-settings: "CASL" 0, "wght" 600;
+  font-variation-settings: 'CASL' 0, 'wght' 600;
   font-size: 9vw;
   line-height: 1.1em;
   text-align: center;
   color: var(--main-font-color);
-}
-
-/* position of mouse cursor info */
-p#cursorInfo{
-  display: block;
-  position: absolute;
-  min-width: 125px;
-  min-height: 44px;
-  right: 30px;
-  margin: 18px 0 0 0;
 }
 
 /* position of font info */

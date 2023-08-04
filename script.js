@@ -30,10 +30,6 @@ $(window).load(function () {
     mouseX = event.pageX;
     mouseY = event.pageY;
 
-    // writes the mouse coords into #cursorInfo <p>
-    var coor = "X-position: " + mouseX + "<br />Y-position: " + mouseY;
-    $("#cursorInfo").html(coor);
-
     // calls function to assess window size
     windowSize();
 
