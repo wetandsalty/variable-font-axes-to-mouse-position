@@ -10,16 +10,16 @@ $(window).load(function () {
   var screenW;
   var screenH;
 
-  // declare variable font variables
+  // declare font-variation variables
   var fontWeight;
   var fontCasual;
 
   /*
   set the style before user moves mouse
-  (should be the same as in css)
+  (should be the same as in css to reduce "jumps")
   */
   var startStyle = {
-    "font-variation-settings": "'CASL' " + 0 + ", 'wght' " + 600
+    "font-variation-settings": "'CASL' " + 0 , "font-weight" : "600"
   };
   $("#text").css(startStyle);
 
@@ -43,13 +43,13 @@ $(window).load(function () {
     fontCasual = (scaleValue(mouseY, 0, screenH, 0, 1)).toFixed(2);
 
     // puts var-font css attributes into one var
-    var xStyles = {
-      "font-variation-settings": "'CASL' " + fontCasual + ", 'wght' " + fontWeight
+    var xStyle = {
+      "font-variation-settings": "'CASL' " + fontCasual , "font-weight" : fontWeight
     };
     // sets the css style of #text
-    $("#text").css(xStyles);
+    $("#text").css(xStyle);
 
-    // writes the mouse coordinates into the #fontInfo <p>
+    // writes the mouse coordinates into the <p> #fontInfo
     var fontInfo = "Weight: " + fontWeight + "<br />Casual: " + fontCasual;
     $("#fontInfo").html(fontInfo);
 
