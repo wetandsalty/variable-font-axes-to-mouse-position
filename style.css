@@ -59,9 +59,10 @@ p{
 }
 
 /* Style of text in the variable font*/
-p#text{
+#text{
   display: block;
   width: 75vw;
+  padding: 0 10px;
   overflow: visible;
   overflow-wrap: break-word;
   word-break: break-word;
@@ -79,20 +80,20 @@ p#text{
   caret-color: var(--secondary-font-color);
 }
 
-p#text:focus{
+#text:focus{
   outline: 0;
   -moz-outline-style: none;
 }
 
 /* position of font info */
-p#fontInfo{
+#fontInfo{
   min-height: 44px;
   margin: 0;
   text-align: center;
 }
 
 /* credit position – you can get rid of this */
-p.credit{
+.credit{
   display: block;
   position: absolute;
   min-width: 125px;
