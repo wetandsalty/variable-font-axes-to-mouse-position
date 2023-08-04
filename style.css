@@ -60,12 +60,27 @@ p{
 
 /* Style of text in the variable font*/
 p#text{
+  display: block;
+  width: 75vw;
+  overflow: visible;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   font-family: var(--variable-font);
   font-variation-settings: 'CASL' 0, 'wght' 600;
   font-size: 9vw;
   line-height: 1.1em;
   text-align: center;
   color: var(--main-font-color);
+  caret-color: var(--secondary-font-color);
+}
+
+p#text:focus{
+  outline: 0;
+  -moz-outline-style: none;
 }
 
 /* position of font info */
